@@ -130,8 +130,6 @@ Shipping method analysis.
 
 ## Next Step
 
-Phase 4 - Dimension Design
-
 - Define columns for each dimension.
 - Define primary keys.
 - Define surrogate keys.
