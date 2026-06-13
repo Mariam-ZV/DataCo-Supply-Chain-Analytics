@@ -11,5 +11,32 @@ CREATE TABLE dim_customer (
     customer_street VARCHAR(255),
     customer_zipcode VARCHAR(20)
 );
+------------------------------------------------------------------------------
 
-SELECT * FROM dim_customer;
+INSERT INTO dim_customer (
+    customer_id,
+    customer_fname,
+    customer_lname,
+    customer_email,
+    customer_segment,
+    customer_city,
+    customer_state,
+    customer_country,
+    customer_street,
+    customer_zipcode
+)
+SELECT DISTINCT
+    `Customer Id`,
+    `Customer Fname`,
+    `Customer Lname`,
+    `Customer Email`,
+    `Customer Segment`,
+    `Customer City`,
+    `Customer State`,
+    `Customer Country`,
+    `Customer Street`,
+    `Customer Zipcode`
+FROM dataco_raw;
+------------------------------------------------------------------------------
+
+SELECT COUNT(*) FROM dim_customer;
