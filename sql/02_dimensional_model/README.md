@@ -1,7 +1,5 @@
 # Dimensional Modelling
 
-## Step 1 - Identify Business Entities
-
 ## Objective
 
 Design the dimensional model for the DataCo Smart Supply Chain dataset before creating any physical tables.
@@ -22,7 +20,7 @@ This grain was confirmed during the Data Audit phase.
 
 ---
 
-## Identified Business Entities
+## Step 2.1 - Identified Business Entities
 
 ### Customer
 
@@ -127,30 +125,8 @@ Shipping method analysis.
 - Surrogate keys will be evaluated during dimension design.
 
 ---
-
-## Next Step
-
-- Define columns for each dimension.
-- Define primary keys.
-- Define surrogate keys.
-- Prepare dimension table creation scripts.
-
   
-## Step 2- Define Fact and Dimension Tables
-
-## Objective
-
-Define the fact table, dimension tables, and column allocation for the DataCo Smart Supply Chain dataset before creating any physical tables.
-
----
-
-## Confirmed Dataset Grain
-
-One row represents one Order Item.
-
-Primary business key:
-
-- Order Item Id
+## Step 2.2 - Define Fact and Dimension Tables
 
 ---
 
