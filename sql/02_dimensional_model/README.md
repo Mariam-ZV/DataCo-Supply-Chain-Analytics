@@ -128,8 +128,6 @@ Shipping method analysis.
   
 ## Step 2.2 - Define Fact and Dimension Tables
 
----
-
 ## Fact Table
 
 ### Fact_Order_Items
