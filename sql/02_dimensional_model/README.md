@@ -1,6 +1,6 @@
 # Dimensional Modelling
 
-## Step 2.1 - Identify Business Entities
+## Step 1 - Identify Business Entities
 
 ## Objective
 
