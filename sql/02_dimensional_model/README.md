@@ -1,5 +1,7 @@
 # Dimensional Modelling
 
+## Step 2.1 - Identify Business Entities
+
 ## Objective
 
 Design the dimensional model for the DataCo Smart Supply Chain dataset before creating any physical tables.
