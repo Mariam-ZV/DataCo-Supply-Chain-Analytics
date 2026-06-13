@@ -1,4 +1,4 @@
-# Phase 2 - Dimensional Modelling
+# Dimensional Modelling
 
 ## Objective
 
