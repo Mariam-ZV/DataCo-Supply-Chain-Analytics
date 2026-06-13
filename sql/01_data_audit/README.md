@@ -1,4 +1,4 @@
-# Phase 2: Data Audit & Entity Validation
+# Phase 1: Data Audit & Entity Validation
 
 ## Overview
 
