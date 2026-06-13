@@ -136,3 +136,163 @@ Phase 4 - Dimension Design
 - Define primary keys.
 - Define surrogate keys.
 - Prepare dimension table creation scripts.
+
+  
+## Step 2- Define Fact and Dimension Tables
+
+## Objective
+
+Define the fact table, dimension tables, and column allocation for the DataCo Smart Supply Chain dataset before creating any physical tables.
+
+---
+
+## Confirmed Dataset Grain
+
+One row represents one Order Item.
+
+Primary business key:
+
+- Order Item Id
+
+---
+
+## Fact Table
+
+### Fact_Order_Items
+
+Contains transactional and measurable business events at the order item level.
+
+#### Keys
+
+- Order Item Id
+- Order Id
+- Order Customer Id
+- Order Item Cardprod Id
+
+#### Measures
+
+- Order Item Quantity
+- Sales
+- Order Item Product Price
+- Order Item Discount
+- Order Item Discount Rate
+- Order Item Total
+- Benefit per order
+- Order Profit Per Order
+- Order Item Profit Ratio
+- Sales per customer
+- Days for shipping (real)
+- Days for shipment (scheduled)
+- Late_delivery_risk
+
+#### Transaction Attributes
+
+- Type
+- Order Status
+- Delivery Status
+
+---
+
+## Dimension Tables
+
+### Dim_Customer
+
+- Customer Id
+- Customer Fname
+- Customer Lname
+- Customer Email
+- Customer Segment
+- Customer City
+- Customer State
+- Customer Country
+- Customer Street
+- Customer Zipcode
+
+### Dim_Product
+
+- Product Card Id
+- Product Name
+- Product Description
+- Product Price
+- Product Status
+- Category Id
+
+### Dim_Category
+
+- Category Id
+- Category Name
+- Department Id
+
+### Dim_Department
+
+- Department Id
+- Department Name
+
+### Dim_Market
+
+- Market
+- Order Country
+- Order Region
+- Order State
+- Order City
+- Order Zipcode
+- Latitude
+- Longitude
+
+### Dim_Shipping_Mode
+
+- Shipping Mode
+
+### Dim_Date
+
+Source date fields:
+
+- order date (DateOrders)
+- shipping date (DateOrders)
+
+A dedicated date dimension will be created during the dimension build process.
+
+---
+
+## Excluded Columns
+
+The following columns will not be included in the dimensional model:
+
+- Customer Password
+- Product Image
+- Product Category Id
+
+### Exclusion Reasons
+
+#### Customer Password
+
+Operational field with no analytical value.
+
+#### Product Image
+
+Image URL field with no analytical value.
+
+#### Product Category Id
+
+Duplicates Category Id and was validated during the audit phase.
+
+---
+
+## Modelling Decisions
+
+- Fact_Order_Items will be the primary fact table.
+- All analytical measures will reside in Fact_Order_Items.
+- Dimension tables will store descriptive business attributes.
+- Date analysis will be handled through a dedicated Dim_Date table.
+- Excluded columns will remain in the raw staging table only.
+
+---
+
+## Next Step
+
+03_dimensions
+
+- Define primary keys.
+- Define surrogate keys.
+- Design individual dimension tables.
+- Prepare dimension creation scripts.
