@@ -9,3 +9,24 @@ CREATE TABLE dim_product (
 );
 
 SELECT * FROM dim_product;
+----------------------------------------------------------
+
+INSERT INTO dim_product (
+    product_card_id,
+    product_name,
+    product_description,
+    product_price,
+    product_status,
+    category_id
+)
+SELECT DISTINCT
+    `Product Card Id`,
+    `Product Name`,
+    `Product Description`,
+    `Product Price`,
+    `Product Status`,
+    `Category Id`
+FROM dataco_raw;
+----------------------------------------------------------
+
+SELECT COUNT(*) FROM dim_product;
