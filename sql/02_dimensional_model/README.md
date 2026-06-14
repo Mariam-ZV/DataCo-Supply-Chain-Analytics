@@ -107,7 +107,7 @@ Department hierarchy.
 
 Order and shipment date analysis.
 
-### Dim_Market
+### Dim_Geography
 
 Market and geographic analysis.
 
@@ -200,7 +200,7 @@ Contains transactional and measurable business events at the order item level.
 - Department Id
 - Department Name
 
-### Dim_Market
+### Dim_Geography
 
 - Market
 - Order Country
