@@ -40,7 +40,7 @@ Business Key:
 - Product Key
 - Category Key
 - Department Key
-- Market Key
+- Geography Key
 - Shipping Mode Key
 - Order Date Key
 - Shipping Date Key
