@@ -72,7 +72,7 @@ Stores geographic and market attributes.
 
 Surrogate Key:
 
-- Market Key
+- Geography Key
 
 ---
 
