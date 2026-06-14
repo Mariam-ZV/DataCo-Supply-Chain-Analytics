@@ -66,7 +66,7 @@ Surrogate Key:
 
 ---
 
-### Dim_Market
+### Dim_Geography
 
 Stores geographic and market attributes.
 
