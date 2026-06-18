@@ -74,6 +74,10 @@ Surrogate Key:
 
 - Geography Key
 
+Note:
+
+- Latitude and Longitude were excluded to ensure unique geography records and prevent duplicate dimension members.
+
 ---
 
 ### Dim_Shipping_Mode
