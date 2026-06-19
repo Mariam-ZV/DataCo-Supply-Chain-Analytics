@@ -12,10 +12,6 @@ The fact table stores transactional business events and measurable metrics at th
 
 One row = One Order Item
 
-Business Key:
-
-- Order Item Id
-
 ---
 
 ## Fact Table Created
@@ -27,11 +23,7 @@ Stores transactional sales, profit, quantity and delivery metrics.
 Primary Key:
 
 - Order Item Key
-
-Business Key:
-
-- Order Item Id
-
+  
 ---
 
 ## Foreign Keys
