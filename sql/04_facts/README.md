@@ -41,6 +41,17 @@ These keys connect the fact table to the dimension tables.
 
 ---
 
+## Business Identifiers
+
+The fact table also preserves key source-system identifiers for auditing, validation and traceability.
+
+- Order Item ID
+- Order ID
+- Customer ID
+- Product Card ID
+
+---
+
 ## Measures
 
 ### Sales Metrics
