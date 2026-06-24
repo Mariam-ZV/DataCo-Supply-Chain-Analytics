@@ -102,7 +102,7 @@ The fact table also preserves key source-system identifiers for auditing, valida
 
 05_business_analysis
 
-- Populate dimensions.
-- Populate fact table.
-- Validate relationships.
-- Begin business analysis queries.
+- Validate business KPIs.
+- Perform stakeholder-driven business analysis.
+- Build Power BI dashboards.
+- Develop business recommendations.
